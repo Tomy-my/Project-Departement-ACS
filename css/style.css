@@ -1,0 +1,196 @@
+/* Code couleur : 
+
+Écriture du Logo = #414846
+Montagne claire = #969696
+Montagne sombre = #818483
+Herbe claire = #828E8A
+Herbe = #4E685C
+Neige = #A9BCC4
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.877);
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* body{
+    background-color: #414846;
+} */
+
+/* ----------------------------------------------Barre de Navigation---------------------------------------------- */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+
+    height: 80px;
+    background-color: rgb(28, 28, 28, 0.87);
+}
+
+#logo{
+    width: 202px;
+    margin-right: auto;
+    margin-left: 50px;
+    transition-duration: 0.4s;
+}
+
+#logo:hover{
+    margin-left: 60px;
+
+}
+
+nav div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 70px;
+}
+
+nav a{
+    margin-right: 100px;
+
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+
+    transition-duration: 0.5s;
+}
+
+nav hr{
+    width: 0%;            
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0px #ffffff;
+
+    transition-duration: 0.4s;
+}
+
+#accueil{
+    width: 78px;
+    height: 37px;
+    padding-top: 10px;
+}
+#accueil a:hover{
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#accueil:hover hr{
+    width: 50%;
+    border: solid 1px #ffffff;
+}
+
+
+#lieux{
+    width: 57px;
+    height: 37px;
+    padding-top: 10px;
+}
+#lieux a:hover{
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#lieux:hover hr{
+    width: 50%;
+    border: solid 1px #ffffff;
+}
+
+#new{
+    width: 100px;
+    height: 37px;
+    padding-top: 10px;
+}
+#new a:hover{
+    margin-right: 90px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#new:hover hr{
+    width: 50%;
+    border: solid 1px #ffffff;
+}
+
+#foire{
+    width: 182px;
+    height: 37px;
+    padding-top: 10px;
+    margin-right: 100px;
+}
+#foire a:hover{
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#foire:hover hr{
+    width: 50%;
+    border: solid 1px #ffffff;
+}
+
+/* ----------------------------------------------Home---------------------------------------------- */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 43vw;
+
+    text-align: center;
+}
+
+.descendre{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    top: 370px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: rotate(45deg);
+
+    border: solid 3px black;
+    background-color: rgb(235, 235, 235);
+
+    animation: 0.5s cubic-bezier(.43,.12,.88,-0.41) 0s infinite alternate bloup;
+}
+@keyframes bloup { 
+    from { 
+        top: 372px; 
+    } 
+    to { 
+        top: 379px;
+    }  
+}
+.descendre a i{
+    transform: rotate(-45deg);
+
+    font-size: 30px;
+    color: #353535;
+
+    transition-duration: 0.3s;
+}
+.descendre a i:hover{
+    color: black
+}
+
+/* ----------------------------------------------GEO---------------------------------------------- */
+
+#geo{
+    height: 43vw;
+
+    background-color: #282828;
+}
