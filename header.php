@@ -5,8 +5,6 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">		
 		<script src="https://kit.fontawesome.com/508ebce8fc.js" crossorigin="anonymous"></script>
 		<title>Jura : <?php echo $titre; ?></title>
 	</head>
