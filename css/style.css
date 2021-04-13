@@ -13,6 +13,10 @@ Neige = #A9BCC4
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+  }
+
 a:link{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.877);
@@ -31,7 +35,7 @@ a:visited{
 nav{
     display: flex;
     justify-content: flex-end;
-
+    
     height: 80px;
     background-color: rgb(28, 28, 28, 0.87);
 }
@@ -144,9 +148,24 @@ nav hr{
     flex-direction: column;
     justify-content: center;
     
-    height: 43vw;
+    height: 45vw;
 
     text-align: center;
+}
+
+.home_titre h2{
+    margin-top: -109px;
+    margin-right: 246px;
+
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.home_titre svg{
+    width: 25%;
 }
 
 .descendre{
@@ -156,7 +175,7 @@ nav hr{
     justify-content: center;
     width: 40px;
     height: 40px;
-    top: 370px;
+    top: 335px;
     margin-left: auto;
     margin-right: auto;
 
@@ -165,16 +184,22 @@ nav hr{
     border: solid 3px black;
     background-color: rgb(235, 235, 235);
 
+    transition-duration: 0.3s;
     animation: 0.5s cubic-bezier(.43,.12,.88,-0.41) 0s infinite alternate bloup;
 }
 @keyframes bloup { 
     from { 
-        top: 372px; 
+        top: 335px; 
     } 
     to { 
-        top: 379px;
+        top: 341px;
     }  
 }
+.descendre:hover{
+    background-color: #353535;
+    border-color: white;
+}
+
 .descendre a i{
     transform: rotate(-45deg);
 
@@ -184,13 +209,62 @@ nav hr{
     transition-duration: 0.3s;
 }
 .descendre a i:hover{
-    color: black
+    color: rgb(236, 236, 236)
 }
 
 /* ----------------------------------------------GEO---------------------------------------------- */
 
 #geo{
-    height: 43vw;
+    display: flex;
+    justify-content: space-around;
 
-    background-color: #282828;
+    height: 995px;
+    padding-top: 40px;
+
+    background-color: #0d0d0dcf;
+}
+hr#descendre{
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.geo_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.geo_left svg{
+    width: 13%;
+    margin-left: 460px;
+    margin-bottom: 15px;
+
+}
+
+.geo_left p{
+    width: 490px;
+    margin-left: auto;
+}
+
+.geo_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    text-align: center;
+}
+
+.geo_right img{
+    width: 50%;
+    transition-duration: 0.4s;
+}
+.geo_right img:hover{
+    width: 52%;
 }

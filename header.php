@@ -5,6 +5,8 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
+        <script src="js/scrolling.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="https://kit.fontawesome.com/508ebce8fc.js" crossorigin="anonymous"></script>
 		<title>Jura : <?php echo $titre; ?></title>
 	</head>
