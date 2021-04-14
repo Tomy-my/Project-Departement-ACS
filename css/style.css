@@ -37,7 +37,7 @@ nav{
     justify-content: flex-end;
     
     height: 80px;
-    background-color: rgb(28, 28, 28, 0.87);
+    background-color: #0d0d0dcf;
 }
 
 #logo{
@@ -219,7 +219,7 @@ nav hr{
     justify-content: space-around;
 
     height: 995px;
-    padding-top: 40px;
+
 
     background-color: #0d0d0dcf;
 }
@@ -279,16 +279,61 @@ hr#ancre{
 
 .saisons{
     height: 995px;
-    background-color: white;
+    background-color: #ffffff;
+    color: white;
 }
 
 .container_saisons{
     display: flex;
     justify-content: space-around;
 
-    background-color: yellow;
+    background-color: #ffffff;
+    text-align: center;
 }
 
+.s1, .s2, .s3, .s4{
+    width: 25%;
+    height: 575px;
+    margin-top: 4px;
+
+    transition-duration: 0.4s;
+
+}
+.s1:hover, .s2:hover, .s3:hover, .s4:hover{
+    width: 30%;
+}
+
+
 .s1 img, .s2 img, .s3 img, .s4 img{
-    width: 10%;
+    position: relative;
+
+    width: 98%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.71);
+
+    transition-duration: 0.4s;
+    z-index: 2;
+}
+.s1 img:hover, .s2 img:hover, .s3 img:hover, .s4 img:hover{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.sous_s1, .sous_s2, .sous_s3, .sous_s4{
+    position: relative;
+
+    height: 250px;
+    top: -400px;
+
+    background-color: #000000d4;
+    /* color: rgba(255, 255, 255, 0); */
+
+    z-index: -1;
+    transition-duration: 0.6s;
+}
+.s1:hover .sous_s1, .s2:hover .sous_s2, .s3:hover .sous_s3, .s4:hover .sous_s4{
+    top: 0px;
+
+    z-index: 1;
+    
 }
