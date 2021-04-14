@@ -278,8 +278,8 @@ hr#ancre{
 /* ----------------------------------------------4 saisons---------------------------------------------- */
 
 .saisons{
-    height: 995px;
-    background-color: #ffffff;
+    height: 925px;
+    background-color: #0d0d0dcf;
     color: white;
 }
 
@@ -287,14 +287,13 @@ hr#ancre{
     display: flex;
     justify-content: space-around;
 
-    background-color: #ffffff;
+    background-color: #0d0d0d00;
     text-align: center;
 }
 
 .s1, .s2, .s3, .s4{
     width: 25%;
     height: 575px;
-    margin-top: 4px;
 
     transition-duration: 0.4s;
 
@@ -307,16 +306,20 @@ hr#ancre{
 .s1 img, .s2 img, .s3 img, .s4 img{
     position: relative;
 
-    width: 98%;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.71);
+    width: 100%;
+    top: -1px;
+
+    border-top: solid 8px rgba(0, 0, 0, 0.92);
+    border-bottom: solid 8px rgba(0, 0, 0, 0.92);
 
     transition-duration: 0.4s;
+
     z-index: 2;
 }
 .s1 img:hover, .s2 img:hover, .s3 img:hover, .s4 img:hover{
-    width: 100%;
     z-index: 10;
     position: relative;
+    border-bottom:rgba(0, 0, 0, 0);
 }
 
 .sous_s1, .sous_s2, .sous_s3, .sous_s4{
@@ -325,7 +328,7 @@ hr#ancre{
     height: 250px;
     top: -400px;
 
-    background-color: #000000d4;
+    background-color: #151515;
     /* color: rgba(255, 255, 255, 0); */
 
     z-index: -1;
@@ -337,3 +340,15 @@ hr#ancre{
     z-index: 1;
     
 }
+
+.entre_sect_saisons{
+    border: solid 6px rgba(0, 0, 0, 0.92);
+}
+
+/* ----------------------------------------------footer---------------------------------------------- */
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+}
+

@@ -46,7 +46,7 @@ body{
 </div>
 
 <!-- ----------------------------------------------4 saisons---------------------------------------------- -->
-
+<!-- <hr class="entre_sect_saisons"> -->
 <div class="saisons">
     <div class="container_saisons">
         <div class="s1">
@@ -79,7 +79,11 @@ body{
         </div>
     </div>
 </div>
+<!-- <hr class="entre_sect_saisons"> -->
 
+<div class="footer">
+    d
+</div>
 
 
 
