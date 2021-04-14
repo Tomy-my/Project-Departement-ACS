@@ -226,6 +226,9 @@ nav hr{
 hr#descendre{
     border-color: rgba(255, 255, 255, 0);
 }
+hr#ancre{
+    border: solid 0px;
+}
 
 .geo_left{
     display: flex;
@@ -238,6 +241,8 @@ hr#descendre{
     letter-spacing: 1px;
     font-family: 'Rubik', sans-serif;
     color: white;
+
+    opacity: 0;
 }
 
 .geo_left svg{
@@ -263,8 +268,27 @@ hr#descendre{
 
 .geo_right img{
     width: 50%;
-    transition-duration: 0.4s;
+    transition-duration: 7s;
 }
 .geo_right img:hover{
     width: 52%;
+    transform: rotate(360deg);
+}
+
+/* ----------------------------------------------4 saisons---------------------------------------------- */
+
+.saisons{
+    height: 995px;
+    background-color: white;
+}
+
+.container_saisons{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: yellow;
+}
+
+.s1 img, .s2 img, .s3 img, .s4 img{
+    width: 10%;
 }
