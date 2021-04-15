@@ -1,13 +1,3 @@
-/* Code couleur : 
-
-Écriture du Logo = #414846
-Montagne claire = #969696
-Montagne sombre = #818483
-Herbe claire = #828E8A
-Herbe = #4E685C
-Neige = #A9BCC4
-*/
-
 *{
     margin: 0;
     padding: 0;
@@ -25,10 +15,6 @@ a:visited{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
-/* body{
-    background-color: #414846;
-} */
 
 /* ----------------------------------------------Barre de Navigation---------------------------------------------- */
 
@@ -467,8 +453,6 @@ hr#ancre{
     line-height: 20px;
 }
 
-
-
 .bas_footer{
     width: 1603px;
     margin-left: 140px;
@@ -484,5 +468,75 @@ hr#ancre{
     font-family: 'Raleway', sans-serif;
 }
 
+/* ----------------------------------------------Barre de Navigation---------------------------------------------- */
+
+.lieux_haut{
+    display: flex;
+    justify-content: center;
+
+    height: 40vw;
+}
+
+.lieux_haut img{
+    width: 100%;
+}
+
+.left_lieux{
+    width: 50%;
+}
+
+.right_lieux{
+    width: 50%;
+}
+
+.lieux_center{
+    display: flex;
+    justify-content: center;
+
+    height: 20vw;
+}
+.lieux_center img{
+    width: 100%;
+}
+
+.left_center{
+    width: 34%;
+}
+
+.center_center{
+    width: 34%;
+}
+
+.right_center{
+    width: 34%;
+}
+
+.lieux_bas{
+    display: flex;
+    justify-content: center;
+
+    height:  15vw;
+    margin-bottom: 54px;
+}
+
+.lieux_bas img{
+    width: 100%;
+}
+
+.bas_1{
+    width: 20%;
+}
+.bas_2{
+    width: 20%;
+}
+.bas_3{
+    width: 20%;
+}
+.bas_4{
+    width: 20%;
+}
+.bas_5{
+    width: 20%;
+}
 
 

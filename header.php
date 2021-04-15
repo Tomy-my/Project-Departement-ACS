@@ -17,7 +17,7 @@
                 <hr>
             </div>
             <div id="lieux">
-                <a href="#">Lieux</a>
+                <a href="lieux.php">Lieux</a>
                 <hr>
             </div>
             <div id="new">
