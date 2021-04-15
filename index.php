@@ -12,7 +12,6 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-
 </style>
 
 <div id="home">
