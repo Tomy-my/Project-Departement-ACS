@@ -38,6 +38,10 @@
                     <p>© 2021 Copyright : JuraTomy</p>
             </div>
         </div>
+        
+        <script src="https://kit.fontawesome.com/508ebce8fc.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/monscript.js"></script>
 
     </body>
 </html>

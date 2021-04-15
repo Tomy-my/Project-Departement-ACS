@@ -327,18 +327,28 @@ hr#ancre{
 .sous_s1, .sous_s2, .sous_s3, .sous_s4{
     position: relative;
 
+    /* width: 524px; */
     height: 250px;
     top: -400px;
 
     background-color: #151515;
 
+    border: solid 2px #0a7d17;
+    border-top: none;
+
     z-index: -1;
     transition-duration: 0.6s;
 }
 .s1:hover .sous_s1, .s2:hover .sous_s2, .s3:hover .sous_s3, .s4:hover .sous_s4{
-    top: 0px;
+    top: -6px;
 
     z-index: 1; 
+}
+.sous_s1{
+    border-left: none;
+}
+.sous_s4{
+    border-right: none;
 }
 
 .sous_s1 h1, .sous_s2 h1, .sous_s3 h1, .sous_s4 h1{
@@ -373,6 +383,8 @@ hr#ancre{
     height: 300px;
     
     background-color: rgb(19, 19, 19);
+
+    border-top: solid 1px #5b5b5b;
     
     color: white;
 }
@@ -399,7 +411,7 @@ hr#ancre{
 }
 
 .left_footer p{
-    width: 32%;
+    width: 36%;
     margin-top: 6px;
 
     font-size: 14px;
@@ -449,6 +461,8 @@ hr#ancre{
 }
 
 .right_footer p{
+    width: 233px;
+
     font-size: 13px;
     line-height: 20px;
 }
