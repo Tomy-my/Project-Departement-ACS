@@ -19,9 +19,11 @@ a:visited{
 /* ----------------------------------------------Barre de Navigation---------------------------------------------- */
 
 nav{
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     
+    width: 100%;
     height: 80px;
     background-color: #0d0d0dcf;
 }
@@ -134,7 +136,7 @@ nav hr{
     flex-direction: column;
     justify-content: center;
     
-    height: 45vw;
+    height: 49vw;
 
     text-align: center;
 }
@@ -365,7 +367,7 @@ hr#ancre{
     flex-direction: column;
     justify-content: space-around;
     
-    margin-top: -54px;
+    /* margin-top: -80px; */
     height: 300px;
     
     background-color: rgb(19, 19, 19);
@@ -468,75 +470,150 @@ hr#ancre{
     font-family: 'Raleway', sans-serif;
 }
 
-/* ----------------------------------------------Barre de Navigation---------------------------------------------- */
+/* ----------------------------------------------Lieux - Slide ---------------------------------------------- */
 
-.lieux_haut{
-    display: flex;
-    justify-content: center;
+.slider {
+    position: relative;
 
-    height: 40vw;
-}
-
-.lieux_haut img{
     width: 100%;
-}
+    height: 100vh;
+    overflow: hidden;
 
-.left_lieux{
-    width: 50%;
-}
-
-.right_lieux{
-    width: 50%;
-}
-
-.lieux_center{
-    display: flex;
-    justify-content: center;
-
-    height: 20vw;
-}
-.lieux_center img{
+    z-index: -1;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-.left_center{
-    width: 34%;
-}
-
-.center_center{
-    width: 34%;
-}
-
-.right_center{
-    width: 34%;
-}
-
-.lieux_bas{
-    display: flex;
-    justify-content: center;
-
-    height:  15vw;
-    margin-bottom: 54px;
-}
-
-.lieux_bas img{
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .slide.current {
+    opacity: 1;
+  }
+  
+  .slide .content {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
     width: 100%;
-}
+    opacity: 0;
+    background-color: #0d0d0dcf;
+    color: #ffffff;
+    padding: 1rem;
+    line-height: 1.3;
+  }
+  
+  .slide .content h1 {
+    margin-bottom: 0.625rem;
+    
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+  }
 
-.bas_1{
-    width: 20%;
-}
-.bas_2{
-    width: 20%;
-}
-.bas_3{
-    width: 20%;
-}
-.bas_4{
-    width: 20%;
-}
-.bas_5{
-    width: 20%;
-}
+  .slide .content p {
+    margin-bottom: 0.625rem;
+    
+    font-size: 14px;
+    line-height: 26px;
+    text-align: initial;
+    font-family: 'Nunito', sans-serif;
+  }
 
+  
+  .slide.current .content {
+    opacity: 1;
+    transform: translateY(-300px);
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .slide:first-child {
+    background: url("../images/lieux/abime.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(2) {
+    background: url("../images/lieux/tufs.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(3) {
+    background: url("../images/lieux/herisson.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(4) {
+    background: url("../images/lieux/boite.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(5) {
+    background: url("../images/lieux/baume.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(6) {
+    background: url("../images/lieux/sel.jpg") no-repeat center/cover;
+  }
 
+  .slide:nth-child(7) {
+    background: url("../images/lieux/fromage.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(8) {
+    background: url("../images/lieux/lion.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(9) {
+    background: url("../images/lieux/notre-dame.jpg") no-repeat center/cover;
+  }
+  
+  .slide:nth-child(10) {
+    background: url("../images/lieux/vieux.jpg") no-repeat center/cover;
+  }
+  
+  
+  .buttons button#prev {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+  }
+  
+  .buttons button#next {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+  }
+  
+  .buttons button {
+    border: 2px solid #a6a6a6;
+    background-color: #353535;
+    color: #dfdfdf;
+    cursor: pointer;
+    padding: 15px 17px;
+    border-radius: 50%;
+    outline: none;
+
+    transition-duration: 0.4s;
+  }
+  
+  .buttons button:hover {
+    background-color: #1d1d1d;
+    border: 2px solid rgb(211, 211, 211);
+  }
+  
+  @media (min-width: 640px) and (min-height: 640px) {
+    .slide .content {
+      bottom: 70px;
+      left: -600px;
+      width: 600px;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+  
+    .slide.current .content {
+      transform: translateX(600px);
+    }
+  }
+  
