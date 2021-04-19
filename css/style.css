@@ -6,7 +6,15 @@
 html{
     scroll-behavior: smooth;
 }
-  
+
+body{        
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 a:link{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.877);
@@ -616,7 +624,7 @@ hr#ancre{
     }
 }
   
-
+/* ----------------------------------------------Actualités---------------------------------------------- */
 
 .actu_container{
     display: flex;
@@ -636,7 +644,6 @@ hr#ancre{
     margin-top: auto;
     margin-bottom: auto;
 
-    background-color: aqua;
 }
 
 .actu_video{
@@ -644,9 +651,11 @@ hr#ancre{
     height: 100%;
 }
 
-.actu_video iframe{
+.actu_video iframe, .actu_container2 iframe{
     width: 100%;
     height: 100%;
+
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.71);
 }
 
 .actu_right{
@@ -690,7 +699,7 @@ hr#ancre{
     height: 100%;
     margin-right: 5px;
 
-    background-color: green;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.71);
 
     transition-duration: 0.4s;
 }
@@ -700,19 +709,23 @@ hr#ancre{
     height: 100%;
     margin-left: 5px;
 
-    background-color: darkorange;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.71);
 
     transition-duration: 0.4s;
 }
 
 .actu_bas1 img, .actu_bas2 img{
+    position: relative;
+
     width: 100%;
     height: 100%;
+
+    z-index: -1;
 }
 
-.filtre{position: relative;
-    top: -367px;
+.filtre{
     height: 100%;
+    margin-top: -363px;
 
     background-color: #0000009e;
 
@@ -753,4 +766,78 @@ hr#ancre{
 
     background-color: #00000000;
     color: rgba(255, 255, 255, 0);
+}
+
+
+.actu_container2{
+    display: flex;
+    justify-content: space-around;
+
+    height: 21vw;
+    margin-bottom: 100px;
+}
+
+.actu_container2 .left{
+    width: 40%;
+    height: 428px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 70px;
+
+}
+.actu_container2 .right{
+    width: 40%;
+    height: 428px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 70px;
+}
+
+/* ----------------------------------------------Marché---------------------------------------------- */
+
+.container_marche{
+    height: 49vw;
+}
+
+.img_marche{
+    width: 100%;
+    height: 100%;
+}
+
+.img_marche img{
+    width: 100%;
+    height: 100%;
+}
+
+.info_marche{
+    position: relative;
+    width: 35%;
+    height: 255px;
+    margin-top: -280px;
+
+    background-color: #0000009e;
+    color: white;
+}
+
+.info_marche h1{
+    padding-left: 30px;
+    padding-top: 15px;
+
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.info_marche h3{
+    padding-top: 2px;
+    padding-left: 125px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info_marche li{
+    padding-top: 15px;
+    padding-left: 30px;
+    
+    font-family: 'Raleway', sans-serif;
 }

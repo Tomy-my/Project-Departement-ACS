@@ -51,6 +51,15 @@ include("header.php");
     </div>
 </div>
 
+<div class="actu_container2">
+    <div class="left">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gKnZ9HN6bMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="right">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p4HS5-TpZHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <?php
 include("footer.php");
 ?>

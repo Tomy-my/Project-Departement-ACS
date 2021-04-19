@@ -4,16 +4,6 @@ $titre = "Home";
 include("header.php"); 
 ?>
 
-<style>
-body{        
-    background-image: url('./images/1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-</style>
-
 <div id="home">
     <div class="home_titre">
         <h2>Bienvenue au<br></h2>
