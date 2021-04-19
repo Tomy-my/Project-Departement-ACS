@@ -5,8 +5,8 @@
 
 html{
     scroll-behavior: smooth;
-  }
-
+}
+  
 a:link{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.877);
@@ -471,7 +471,6 @@ hr#ancre{
 }
 
 /* ----------------------------------------------Lieux - Slide ---------------------------------------------- */
-
 .slider {
     position: relative;
 
@@ -480,9 +479,9 @@ hr#ancre{
     overflow: hidden;
 
     z-index: -1;
-  }
+}
   
-  .slide {
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -490,13 +489,13 @@ hr#ancre{
     height: 100%;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-  }
+}
   
-  .slide.current {
+.slide.current {
     opacity: 1;
-  }
+}
   
-  .slide .content {
+.slide .content {
     position: absolute;
     bottom: -300px;
     left: 0;
@@ -506,87 +505,87 @@ hr#ancre{
     color: #ffffff;
     padding: 1rem;
     line-height: 1.3;
-  }
+}
   
-  .slide .content h1 {
+.slide .content h1 {
     margin-bottom: 0.625rem;
     
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-  }
+}
 
-  .slide .content p {
+.slide .content p {
     margin-bottom: 0.625rem;
     
     font-size: 14px;
     line-height: 26px;
     text-align: initial;
     font-family: 'Nunito', sans-serif;
-  }
+}
 
   
-  .slide.current .content {
+.slide.current .content {
     opacity: 1;
     transform: translateY(-300px);
     transition: all 0.7s ease-in-out;
-  }
+}
   
-  .slide:first-child {
+.slide:first-child {
     background: url("../images/lieux/abime.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(2) {
+.slide:nth-child(2) {
     background: url("../images/lieux/tufs.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(3) {
+.slide:nth-child(3) {
     background: url("../images/lieux/herisson.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(4) {
+.slide:nth-child(4) {
     background: url("../images/lieux/boite.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(5) {
+.slide:nth-child(5) {
     background: url("../images/lieux/baume.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(6) {
+.slide:nth-child(6) {
     background: url("../images/lieux/sel.jpg") no-repeat center/cover;
-  }
+}
 
-  .slide:nth-child(7) {
+.slide:nth-child(7) {
     background: url("../images/lieux/fromage.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(8) {
+.slide:nth-child(8) {
     background: url("../images/lieux/lion.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(9) {
+.slide:nth-child(9) {
     background: url("../images/lieux/notre-dame.jpg") no-repeat center/cover;
-  }
+}
   
-  .slide:nth-child(10) {
+.slide:nth-child(10) {
     background: url("../images/lieux/vieux.jpg") no-repeat center/cover;
-  }
+}
   
   
-  .buttons button#prev {
+.buttons button#prev {
     position: absolute;
     top: 50%;
     left: 1rem;
-  }
+}
   
-  .buttons button#next {
+.buttons button#next {
     position: absolute;
     top: 50%;
     right: 1rem;
-  }
+}
   
-  .buttons button {
+.buttons button {
     border: 2px solid #a6a6a6;
     background-color: #353535;
     color: #dfdfdf;
@@ -596,14 +595,14 @@ hr#ancre{
     outline: none;
 
     transition-duration: 0.4s;
-  }
+}
   
-  .buttons button:hover {
+.buttons button:hover {
     background-color: #1d1d1d;
     border: 2px solid rgb(211, 211, 211);
-  }
+}
   
-  @media (min-width: 640px) and (min-height: 640px) {
+@media (min-width: 640px) and (min-height: 640px) {
     .slide .content {
       bottom: 70px;
       left: -600px;
@@ -612,8 +611,146 @@ hr#ancre{
       line-height: 1.6;
     }
   
-    .slide.current .content {
+.slide.current .content {
       transform: translateX(600px);
     }
-  }
+}
   
+
+
+.actu_container{
+    display: flex;
+    justify-content: space-around;
+
+    height: 46vw;
+    padding-top: 70px;
+}
+
+.actu_left{
+    display: flex;
+    justify-content: space-around;
+
+    width: 49%;
+    height: 740px;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background-color: aqua;
+}
+
+.actu_video{
+    width: 100%;
+    height: 100%;
+}
+
+.actu_video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.actu_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 49%;
+    height: 740px;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.actu_haut{
+
+    height: 50%;
+    margin-bottom: 5px;
+
+    background-color: yellow;
+
+    transition-duration: 0.4s;
+}
+
+.actu_img, .actu_img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.actu_bas{
+    display: flex;
+
+    height: 49%;
+    margin-top: 5px;
+}
+
+.actu_bas1{
+    width: 50%;
+    height: 100%;
+    margin-right: 5px;
+
+    background-color: green;
+
+    transition-duration: 0.4s;
+}
+
+.actu_bas2{
+    width: 50%;
+    height: 100%;
+    margin-left: 5px;
+
+    background-color: darkorange;
+
+    transition-duration: 0.4s;
+}
+
+.actu_bas1 img, .actu_bas2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.filtre{position: relative;
+    top: -367px;
+    height: 100%;
+
+    background-color: #0000009e;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+    transition-duration: 0.4s;
+}
+
+.filtre1{
+    position: relative;
+    top: -373px;
+    height: 100%;
+
+    background-color: #0000009e;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+    transition-duration: 0.4s;
+}
+.filtre h1, .filtre1 h1{
+    padding-top: 280px;
+    padding-left: 50px;
+
+    font-size: 25px;
+}
+
+.filtre p, .filtre1 p{
+    padding-top: 7px;
+    padding-left: 50px;
+
+    font-size: 13px;
+}
+
+.actu_img:hover .filtre1, .actu_bas1:hover .filtre, .actu_bas2:hover .filtre{
+    height: 0%;
+
+    background-color: #00000000;
+    color: rgba(255, 255, 255, 0);
+}

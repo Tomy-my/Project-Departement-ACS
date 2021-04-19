@@ -22,11 +22,11 @@
                 <hr>
             </div>
             <div id="new">
-                <a href="index.php">Actualités</a>
+                <a href="actu.php">Actualités</a>
                 <hr>
             </div>
             <div id="foire">
-                <a href="index.php">Marchés & Foires</a>
+                <a href="foire.php">Marchés & Foires</a>
                 <hr>
             </div>
         </nav>

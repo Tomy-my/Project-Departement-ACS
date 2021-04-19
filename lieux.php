@@ -1,4 +1,6 @@
 <?php
+$titre = "Lieux";
+
 include("header.php");
 ?>
 
