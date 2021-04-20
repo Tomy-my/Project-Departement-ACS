@@ -6,7 +6,7 @@ include("header.php");
 
 <div class="container_marche">
     <div class="img_marche">
-        <img src="images/marché.jpg">
+        <img src="images/marche.jpg">
         <div class="info_marche">
             <h1>Les mardis de Pont-de-Poitte</h1>
             <h3>Marchés nocturnes du Jura !</h3>

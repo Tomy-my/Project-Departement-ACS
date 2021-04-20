@@ -94,6 +94,7 @@ include("header.php");
       <button id="prev"><i class="fas fa-arrow-left"></i></button>
       <button id="next"><i class="fas fa-arrow-right"></i></button>
     </div>
+    
 <?php
 include("footer.php");
 ?>

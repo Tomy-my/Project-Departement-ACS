@@ -91,7 +91,8 @@ include("header.php");
                     Prairies fleuries en plaine et en montagne, bourgeons au bout des sarments de vignes, 
                     cascades et rivières abondantes, faune et flore sauvage en éveil…
                     Le Jura se laisse contempler et explorer à votre gré. A pied, à cheval, ou à vélo, 
-                    retrouvez nos idées de balades pour faire le plein de nature et de vitalité !</p>
+                    retrouvez nos idées de balades pour faire le plein de nature et de vitalité !
+                </p>
             </div>
         </div>
     </div>
