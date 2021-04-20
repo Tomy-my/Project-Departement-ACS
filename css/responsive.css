@@ -177,10 +177,107 @@
     .geo_right{
         display: none;
     }
-    .saisons{
+    .saisons .container_saisons{
         display: none;
     }
     #footer{
+        margin-top: 809px;
+        width: 100%;
+        height: 60px;
+    }
+    .bas_footer{
+        width: auto;
+        margin-left: 0px;
+        border: none;
+    }
+    #footer p{
+        margin-top: 0px;
+    }
+    .haut_footer{
         display: none;
+    }
+    .saisons, .saisons .slider, .saisons .slider .content, .saisons #prev, .saisons #next{
+        display: block;
+    }
+
+    .saisons{
+        height: 0px;
+    }
+
+    .saisons .slide:first-child {
+        background: url("../images/ete.jpg") no-repeat center/cover;
+    }
+      
+    .saisons .slide:nth-child(2) {
+        background: url("../images/automne.jpg") no-repeat center/cover;
+    }
+      
+    .saisons .slide:nth-child(3) {
+        background: url("../images/hiver.jpg") no-repeat center/cover;
+    }
+      
+    .saisons .slide:nth-child(4) {
+        background: url("../images/printemps.jpg") no-repeat center/cover;
+    }
+
+    .saisons .slide .content p{
+        width: 93%;
+    }
+
+    .menu_burger{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .menu_burger a{
+        margin-right: 0px;
+    }
+
+    .menu_burger hr{
+        width: 40px;
+        height: 3px;
+
+        background-color: white;
+    }
+
+    burger{
+        display: none;
+    }
+
+    burger:target{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        width: 100%;
+        height: 730px;
+        margin-top: 80px;
+        padding-left: 37px;
+
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+
+        text-align: center;
+
+        background-color: #1d191a;
+    }
+    
+    .menu_burger a{
+        font-size: 35px;
+    }
+
+    #burger_menu hr{
+        height: 1px;
+    }
+
+    #burger_menu i{
+        margin-top: 10px;
+        margin-bottom: 105px;
+        font-size: 41px;
+        margin-left: -70px;
+        color: red;
     }
 }

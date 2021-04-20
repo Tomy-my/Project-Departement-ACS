@@ -42,6 +42,7 @@ nav{
     width: 202px;
     margin-right: auto;
     margin-left: 50px;
+    padding-top: 1px;
     transition-duration: 0.4s;
 }
 
@@ -367,6 +368,10 @@ hr#ancre{
     line-height: 26px;
     text-align: initial;
     font-family: 'Nunito', sans-serif;
+}
+
+.saisons .slider, .saisons .slider .content, .saisons .buttons{
+    display: none;
 }
 
 /* ----------------------------------------------footer---------------------------------------------- */
@@ -841,4 +846,8 @@ hr#ancre{
     padding-left: 30px;
     
     font-family: 'Raleway', sans-serif;
+}
+
+.menu_burger{
+    display: none;
 }

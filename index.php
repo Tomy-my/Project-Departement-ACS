@@ -96,6 +96,63 @@ include("header.php");
             </div>
         </div>
     </div>
+    <div class="slider">
+        <div class="slide current">
+            <div class="content">
+                <h1>Été</h1>
+                <p>
+                    Pour ceux à qui la baignade et le farniente ne suffisent pas, les plans d’eau jurassiens 
+                    regorgent d’activités nautiques accessibles à tous.
+                    <br>
+                    Balades en pédalo, kayak, canoë et pourquoi pas, stand up paddle : découvrez les lacs à votre rythme, au fil de l’eau. 
+                    <br>
+                    Croisières commentées à bord du Louisiane, plaisance et bateaux électriques sans permis : 
+                    <br>chacun y trouvera son bonheur en fonction de ses affinités.
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Automne</h1>
+                <p>
+                    Comme dans le Nord de l’Amérique, l’été indien se vit aussi dans le Jura.
+                    <br> 
+                    Avec, d’un côté, les grands espaces sauvages et colorés de la Région
+                    <br>des Lacs et du Haut-Jura ; d’un autre côté, le Vignoble qui s’anime à l’occasion des vendanges 
+                    des  villes et villages de caractère pour de belles balades, et une multitude de 
+                    flâneries gustatives. 
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Hiver</h1>
+                <p>
+                    C’est la destination de vacances idéale pour goûter aux plaisirs de l’hiver. 
+                    <br>S’adonner aux joies de la glisse, parcourir les doux reliefs et profiter des grands espaces 
+                    <br>(un des plus vastes domaines nordiques d’Europe !)
+                    <br>Le tout dans une montagne accessible et vivante.
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h1>Printemps</h1>
+                <p>
+                    Le printemps dans le Jura c’est la saison rêvée pour s’immerger au cœur de la Nature.
+                    <br>
+                    Prairies fleuries en plaine et en montagne, bourgeons au bout des sarments de vignes, 
+                    cascades et rivières abondantes, faune et flore sauvage en éveil…
+                    Le Jura se laisse contempler et explorer à votre gré. A pied, à cheval, ou à vélo, 
+                    retrouvez nos idées de balades pour faire le plein de nature et de vitalité !
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left"></i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
 </div>
 
 <?php
