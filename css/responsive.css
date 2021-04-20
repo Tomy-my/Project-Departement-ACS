@@ -1,0 +1,186 @@
+
+
+
+/* max-width orde décroissant */
+
+
+
+
+@media only screen and (max-width : 1845px){            
+    .s1:hover, .s2:hover, .s3:hover, .s4:hover{
+        
+        width: 25%;             
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1808px){            
+    .sous_s1 p, .sous_s2 p, .sous_s3 p, .sous_s4 p{ 
+       
+        font-size: 13px;       
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1740px){       
+    .left_footer p{ 
+       
+        width: 42%;       
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1680px){       
+    .sous_s1 p, .sous_s2 p, .sous_s3 p, .sous_s4 p{ 
+       
+        font-size: 12px;        
+    }
+
+    .actu_container{
+        height: 56vw;
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1629px){       
+    .left_footer p{ 
+       
+        width: 49%;       
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1589px){       
+    .actu_container2{
+        height: 25vw;
+    }
+}
+
+
+
+@media only screen and (max-width : 1443px){       
+    .actu_bas2 .filtre h1{
+        padding-top: 253px;
+    }
+}
+
+
+
+@media only screen and (max-width : 1395px){       
+    .actu_container{
+        height: 65vw;
+    }
+    .actu_container2{
+        height: 30vw;
+    }
+
+    .saisons{
+        height: 710px;
+    }
+}
+
+
+
+@media only screen and (max-width : 1586px){       
+    .descendre{
+       
+        display: none;         
+    }
+
+    .left_footer p{             
+        width: 54%;
+    }
+}
+
+
+
+
+@media only screen and (max-width : 1516px){       
+    .left_footer p{ 
+       
+        width: 63%;      
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    #accueil, #lieux, #new, #foire {
+        display: none;
+    }
+
+    #logo{
+        margin-left: 0px;
+    }
+
+    #home{
+        height: 216vw;
+    }
+
+    .home_titre h2{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 27px;
+    }
+
+    .descendre{
+        display: flex;
+
+        top: 194px;
+    }
+
+    @Keyframes bloup{
+        
+        0%{
+            top: 194px;
+        }
+
+        100%{
+            top: 208px;
+        }
+    }
+
+    #geo{
+        flex-direction: column;
+
+        height: 900px;
+    }
+
+    #geo p{
+        width: 177%;
+        margin-left: 25px;
+        
+        font-size: 16px;
+    }
+
+    .geo_left svg{
+        width: 50%;
+        margin-left: 25px;
+    }
+
+    .geo_right{
+        display: none;
+    }
+    .saisons{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+}

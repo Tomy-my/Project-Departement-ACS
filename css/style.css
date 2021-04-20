@@ -240,7 +240,6 @@ hr#ancre{
     font-family: 'Rubik', sans-serif;
     color: white;
 
-    opacity: 0;
 }
 
 .geo_left svg{
@@ -360,7 +359,7 @@ hr#ancre{
 }
 
 .sous_s1 p, .sous_s2 p, .sous_s3 p, .sous_s4 p{
-    width: 454px;
+    width: 99%;
     margin-right: auto;
     margin-left: auto;
 
