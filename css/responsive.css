@@ -181,7 +181,6 @@
         display: none;
     }
     #footer{
-        margin-top: 809px;
         width: 100%;
         height: 60px;
     }
@@ -201,7 +200,8 @@
     }
 
     .saisons{
-        height: 0px;
+        height: 812px;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .saisons .slide:first-child {
@@ -262,7 +262,7 @@
 
         text-align: center;
 
-        background-color: #1d191a;
+        background-color: #0d0d0dcf;
     }
     
     .menu_burger a{
